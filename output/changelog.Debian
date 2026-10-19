@@ -1,4 +1,4 @@
-tree-sitter-cli (FULL_VERSION) DIST; urgency=low
+tree-sitter-cli (FULL_VERSION) stable; urgency=low
 
   ## v0.27.0 (2026-08-30)
 

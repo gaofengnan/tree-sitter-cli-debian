@@ -1,7 +1,5 @@
-ARG DEBIAN_DIST=bookworm
-FROM debian:$DEBIAN_DIST
+FROM debian:bookworm
 
-ARG DEBIAN_DIST
 ARG tree_sitter_cli_VERSION
 ARG BUILD_VERSION
 ARG FULL_VERSION
@@ -41,13 +39,11 @@ COPY output/changelog.Debian /output/usr/share/doc/tree-sitter-cli/
 COPY output/README.md /output/usr/share/doc/tree-sitter-cli/
 RUN chmod 644 /output/usr/share/doc/tree-sitter-cli/*
 
-RUN sed -i "s/DIST/$DEBIAN_DIST/" /output/usr/share/doc/tree-sitter-cli/changelog.Debian
 RUN sed -i "s/FULL_VERSION/$FULL_VERSION/" /output/usr/share/doc/tree-sitter-cli/changelog.Debian
-RUN sed -i "s/DIST/$DEBIAN_DIST/" /output/DEBIAN/control
 RUN sed -i "s/tree_sitter_cli_VERSION/$tree_sitter_cli_VERSION/" /output/DEBIAN/control
 RUN sed -i "s/BUILD_VERSION/$BUILD_VERSION/" /output/DEBIAN/control
 RUN sed -i "s/SUPPORTED_ARCHITECTURES/$ARCH/" /output/DEBIAN/control
 # The binary is glibc-linked; build_*.sh reads the libc6 floor from it.
 RUN sed -i "s|^PACKAGE_DEPENDS$|Depends: $PACKAGE_DEPENDS|" /output/DEBIAN/control
 
-RUN dpkg-deb --build /output /tree-sitter-cli_${FULL_VERSION}.deb
+RUN dpkg-deb -Zxz --build /output /tree-sitter-cli_${FULL_VERSION}.deb

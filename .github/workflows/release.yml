@@ -47,7 +47,6 @@ jobs:
       - name: Build tree-sitter-cli
         run: |
           ./build_debian.sh ${{ inputs.tree_sitter_cli_version }} ${{ inputs.build_version }} ${{ matrix.arch }}
-          ./build_ubuntu.sh ${{ inputs.tree_sitter_cli_version }} ${{ inputs.build_version }} ${{ matrix.arch }}
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4

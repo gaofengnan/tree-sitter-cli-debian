@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Dario Griffo <dariogriffo@gmail.com>
 Homepage: https://tree-sitter.github.io/tree-sitter/
 Package: tree-sitter-cli
-Version: tree_sitter_cli_VERSION-BUILD_VERSION~DIST
+Version: tree_sitter_cli_VERSION-BUILD_VERSION~griffo
 Architecture: SUPPORTED_ARCHITECTURES
 PACKAGE_DEPENDS
 Description: command-line tool for developing Tree-sitter parsers

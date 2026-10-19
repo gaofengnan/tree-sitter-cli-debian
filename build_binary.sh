@@ -2,9 +2,9 @@
 # Compiles the tree-sitter CLI for one architecture inside a jammy container
 # (see Dockerfile.build) and leaves it in tree-sitter-linux-<arch>/.
 #
-# build_debian.sh and build_ubuntu.sh both call this; the binary is compiled
-# once per architecture and reused for every suite, so an existing
-# tree-sitter-linux-<arch>/ directory is kept as is.
+# build_debian.sh calls this; the binary is compiled once per architecture
+# and packaged for every suite, so an existing tree-sitter-linux-<arch>/
+# directory is kept as is.
 tree_sitter_cli_VERSION=$1
 ARCH=$2
 
