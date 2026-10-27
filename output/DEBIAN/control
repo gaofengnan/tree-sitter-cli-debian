@@ -1,10 +1,10 @@
 Source: tree-sitter-cli
 Section: devel
 Priority: optional
-Maintainer: Dario Griffo <dariogriffo@gmail.com>
+Maintainer: Fengnan Gao <gao.fengnan@gmail.com>
 Homepage: https://tree-sitter.github.io/tree-sitter/
 Package: tree-sitter-cli
-Version: tree_sitter_cli_VERSION-BUILD_VERSION~griffo
+Version: tree_sitter_cli_VERSION-BUILD_VERSION~gaofn
 Architecture: SUPPORTED_ARCHITECTURES
 PACKAGE_DEPENDS
 Description: command-line tool for developing Tree-sitter parsers

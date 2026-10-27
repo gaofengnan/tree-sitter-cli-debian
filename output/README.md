@@ -1,5 +1,7 @@
 # Tree-sitter CLI
 
+> Fork of [dariogriffo/tree-sitter-cli-debian](https://github.com/dariogriffo/tree-sitter-cli-debian) (MIT); the original packaging is by Dario Griffo. Served at [deb.gaofn.xyz](https://deb.gaofn.xyz) for Debian 12 (bookworm) and 13 (trixie).
+
 **Develop, test, and use Tree-sitter grammars from the command line.**
 
 ![GitHub Release](https://img.shields.io/github/v/release/tree-sitter/tree-sitter?display_name=tag)

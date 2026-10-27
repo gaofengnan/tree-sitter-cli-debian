@@ -88,9 +88,9 @@ build_architecture() {
 
     # One package for every suite: the binary is compiled against jammy's glibc
     # (2.35), the oldest of every suite we target, so only the old ~<suite>
-    # version suffix ever differed. The fixed ~griffo keeps it below the
+    # version suffix ever differed. The fixed ~gaofn keeps it below the
     # distro's own build of the same version.
-    FULL_VERSION="$tree_sitter_cli_VERSION-${BUILD_VERSION}~griffo_${build_arch}"
+    FULL_VERSION="$tree_sitter_cli_VERSION-${BUILD_VERSION}~gaofn_${build_arch}"
     echo "  Building $FULL_VERSION"
 
     if ! docker build . -t "tree-sitter-cli-$build_arch" \

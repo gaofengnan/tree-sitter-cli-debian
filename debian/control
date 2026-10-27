@@ -1,7 +1,7 @@
 Source: tree-sitter-cli
 Section: devel
 Priority: optional
-Maintainer: Dario Griffo <dariogriffo@gmail.com>
+Maintainer: Fengnan Gao <gao.fengnan@gmail.com>
 Build-Depends: debhelper-compat (= 13), curl, ca-certificates, cmake [amd64 arm64]
 Standards-Version: 4.6.2
 Homepage: https://tree-sitter.github.io/tree-sitter/
